@@ -1,0 +1,147 @@
+.recipe-input {
+  width: 40% !important;
+  margin: auto;
+  padding: 10px;
+}
+
+/* NAVIGATION **/
+.brand-logo {
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 10000;
+  background-image: linear-gradient(45deg, #00796b, #004d40);
+}
+
+/* NAVIGATION END */
+
+/* HERO */
+.hero {
+  background-image: url("../images/hero-jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* HERO END */
+
+.no-results {
+  display: none;
+  text-align: center;
+}
+
+.no-results h4 {
+  background-color: brown;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.modal-content h4 {
+  border-bottom: 2px solid #000;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.exit-btn {
+  font-size: 20px;
+  text-transform: capitalize !important;
+  width: 100%;
+}
+
+.card img {
+  filter: brightness(60%);
+}
+
+.card img:hover {
+  filter: brightness(100%);
+}
+
+/* Featured Menu */
+.featured-section {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.featuredRecipes {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  font-size: 30px;
+  color: #00796b;
+}
+
+.card {
+  margin: 10px;
+}
+
+.featured-section li {
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.featured-section ul {
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+
+.featured-section ol {
+  padding-bottom: 1rem;
+}
+
+.card .card-title {
+  font-weight: 400;
+}
+
+.card .card-content p {
+  font-weight: 300;
+}
+
+.results {
+  width: 80%;
+  margin: auto;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .featured-section {
+    flex-direction: column;
+  }
+  .recipe-input {
+    width: 80% !important;
+  }
+  .card {
+    margin: 10px 0;
+  }
+}
+
+ul:not(.browser-default)>li {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .featured-section {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+}
